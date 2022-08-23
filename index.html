@@ -2,156 +2,94 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best Five</title>
-    <!-- google font  -->
-    <!-- vanilla css  -->
-    <link rel="stylesheet" href="style.css">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <main>
-        <section class=" bg-dark mb-4 header ">
-            <div class="d-flex text-center justify-content-center align-items-center">
-                <div>
-                    <h1 class="text-warning">Select Your Best Five</h1>
-                    <p class="text-white">This is the player list of the football game.Here are many player this
-                        site.You
-                        can choose <br> player
-                        maximum five as your wish.So refresh your mind and enjoy it. </p>
-                </div>
+<body class="bg-neutral-900	">
+    <header>
+        <div class="bg-black">
+            <div>
+                <h1 class="text-center text-yellow-500 font-semibold text-7xl pt-10 ">Select Your Best Five</h1>
+                <p class="text-white mt-5 text-center pb-20">This is the player list of the football game.Here are many
+                    player this
+                    site.You
+                    can choose <br> player
+                    maximum five as your wish.So refresh your mind and enjoy it.</p>
             </div>
-        </section>
-        <section class="container d-flex">
-            <div class="row g-3">
-                <div class="col-lg-3 col-md-3">
-                    <div class="card text-center" style="width: 18rem;">
-                        <img src="images/3385867-69197608-2560-1440.jpg" class="card-img-top img-fluid" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title ">Lionel Messi</h5>
-                            <p class="card-text ">36 goals . 120 assist</p>
-                            <a href="#" class="btn btn-primary text-center">Select</a>
-                        </div>
-                    </div>
+        </div>
+    </header>
+    <main>
+        <section class="m-10">
+            <div class="grid grid-cols-4 gap-4">
+                <div class="bg-gray-900 rounded p-3">
+                    <img src="images/3385867-69197608-2560-1440.jpg" alt=""><br>
+                    <h3 id="messi" class="text-3xl text-white font-medium mb-4">Leonel Messi</h3>
+                    <button id="btn-messi"
+                        class="text-xl text-white bg-sky-600 px-10 py-2 w-11/12 rounded ">SELECT</button>
                 </div>
-                <div class="col-lg-3 col-md-3">
-                    <div class="card text-center" style="width: 18rem;">
-                        <img src="images/24.jpg" class="card-img-top img-fluid" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title ">Neymar Jr</h5>
-                            <p class="card-text ">36 goals . 120 assist</p>
-                            <a href="#" class="btn btn-primary text-center">Select</a>
-                        </div>
-                    </div>
+                <div class="bg-gray-900 rounded p-3">
+                    <img src="images/24.jpg" alt=""><br>
+                    <h3 id="neymar" class="text-3xl text-white font-medium mb-4">Neymar Jr</h3>
+                    <button id="btn-neymar"
+                        class="text-xl text-white bg-sky-600 px-10 py-2 rounded w-11/12">SELECT</button>
                 </div>
-                <div class="col-lg-3 col-md-3">
-                    <div class="card text-center" style="width: 18rem;">
-                        <img src="images/images (2).jpg" class="card-img-top img-fluid" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title ">Kylian Mbappe</h5>
-                            <p class="card-text ">36 goals . 120 assist</p>
-                            <a href="#" class="btn btn-primary text-center">Select</a>
-                        </div>
-                    </div>
+                <div class="bg-gray-900 rounded p-3">
+                    <img src="images/download.jpg" alt=""><br>
+                    <h3 id="di-maria" class="text-3xl text-white font-medium">Di Maria</h3>
+                    <button id="btn-di-maria"
+                        class="text-xl text-white bg-sky-600 px-10 py-2 rounded w-11/12 mt-6">SELECT</button>
                 </div>
 
-                <div class="col-lg-3 col-md-3  bg-dark text-white ">
-                    <ul>
-                        <h2 class="mt-5">Selected V</h2>
-                        <li>1.Lionel Messi</li>
+                <div class="bg-black rounded p-3  text-white ">
+                    <h3 class="text-yellow-500 text-3xl font-medium mb-4 text-center">Selected - V</h3>
+                    <ul id="player-name-list" class="list-decimal mx-5">
+
                     </ul>
                 </div>
-
-                <div class="col-lg-3 col-md-3">
-                    <div class="card text-center" style="width: 18rem;">
-                        <img src="images/images (1).jpg" class="card-img-top img-fluid" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title ">Ronaldo</h5>
-                            <p class="card-text ">36 goals . 120 assist</p>
-                            <a href="#" class="btn btn-primary text-center">Select</a>
-                        </div>
-                    </div>
+                <div class="bg-gray-900 rounded p-3">
+                    <img src="images/Jake.jpg" alt=""><br>
+                    <h3 id="jake" class="text-3xl text-white font-medium mb-4">Jake</h3>
+                    <button id="btn-jake"
+                        class="text-xl text-white bg-sky-600 px-10 py-2 rounded w-11/12	 mt-1">SELECT</button>
                 </div>
-                <div class="col-lg-3 col-md-3">
-                    <div class="card text-center" style="width: 18rem;">
-                        <img src="images/images (3).jpg" class="card-img-top img-fluid" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title ">Sergio Ramos</h5>
-                            <p class="card-text ">36 goals . 120 assist</p>
-                            <a href="#" class="btn btn-primary text-center">Select</a>
-                        </div>
-                    </div>
+                <div class="bg-gray-900 rounded p-3">
+                    <img src="images/skysports-zidane-iqbal-manchester_5608931.jpg" alt=""><br>
+                    <h3 id="zidane-iqbal" class="text-3xl text-white font-medium">Zidane Iqbal</h3>
+                    <button id="btn-zidane-iqbal"
+                        class="text-xl text-white bg-sky-600 px-10 py-2 rounded w-11/12 mt-4">SELECT</button>
                 </div>
-                <div class="col-lg-3 col-md-3">
-                    <div class="card text-center" style="width: 18rem;">
-                        <img src="images/download (1).jpg" class="card-img-top img-fluid" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title ">Renato Sanches</h5>
-                            <p class="card-text ">36 goals . 120 assist</p>
-                            <a href="#" class="btn btn-primary text-center">Select</a>
-                        </div>
-                    </div>
+                <div class="bg-gray-900 rounded p-3 ">
+                    <img src="images/download (1).jpg" alt=""><br>
+                    <h3 id="renato-sanches" class="text-3xl text-white font-medium mb-4">Renato Sanches</h3>
+                    <button id="btn-renato-sanches"
+                        class="text-xl text-white bg-sky-600 px-10 py-2 rounded w-11/12	 mt-4">SELECT</button>
                 </div>
-
-                <div class="col-lg-3 col-md-3 bg-dark text-white text-center">
-                    <h2 class="mt-2 ">Budget</h2>
-                    <p>Per Player <input type="text"></p>
-                    <button class="">Calculate</button>
-                    <br>
-                    <br>
-                    <p>Player Expenses $<span>00</span></p>
-                    <p> Manager <input type="text"></p>
-                    <br>
-                    <p>Coach <input type="text"></p>
-                </div>
-
-
-                <div class="col-lg-3 col-md-3">
-                    <div class="card text-center" style="width: 18rem;">
-                        <img src="images/download.jpg" class="card-img-top img-fluid" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title ">Dimaria</h5>
-                            <p class="card-text ">36 goals . 120 assist</p>
-                            <a href="#" class="btn btn-primary text-center">Select</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3">
-                    <div class="card text-center" style="width: 18rem;">
-                        <img src="images/Jake.jpg" class="card-img-top img-fluid" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title ">Jake Daniels</h5>
-                            <p class="card-text ">36 goals . 120 assist</p>
-                            <a href="#" class="btn btn-primary text-center">Select</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3">
-                    <div class="card text-center" style="width: 18rem;">
-                        <img src="images/skysports-zidane-iqbal-manchester_5608931.jpg" class="card-img-top img-fluid"
-                            alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title ">Zidane Iqbal</h5>
-                            <p class="card-text ">36 goals . 120 assist</p>
-                            <a href="#" class="btn btn-primary text-center">Select</a>
-                        </div>
-                    </div>
+                <div class="bg-black rounded p-3 ">
+                    <h3 class="text-yellow-500 text-3xl  font-medium mb-4 text-center">Budget</h3>
+                    <p class=" text-justify"><span class="text-white">Per Player: </span><input id="player-field"
+                            class="rounded px-4 w-1/2 mb-3" type="text" name=""></p>
+                    <button id="btn-calculate"
+                        class=" bg-sky-500 text-xl text-white font-medium px-10 py-2 rounded w-11/12	 mb-4">Calculate</button>
+                    <h5 class="text-white mb-4">Player Expenses: $<span id="total-expenses-player">00</span></h5>
+                    <p><span class="text-white">Manager: </span><input id="manager-field"
+                            class="rounded px-4 w-1/2 mb-3 mx-2" type="text" name=""></p>
+                    <p class=""><span class="text-white">Coach: </span><input id="coach-field"
+                            class="rounded px-4 w-1/2 mb-3 mx-7" type="text" name=""></p>
+                    <button id="btn-calculate-total"
+                        class="text-xl text-white bg-sky-500 w-4/5 py-2 rounded w-11/12	 mb-4">Calculate
+                        Total</button>
+                    <h5 class="text-white mb-4">Total: $<span id="balance-total">00</span></h5>
                 </div>
             </div>
-
-
-
-
 
         </section>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-        crossorigin="anonymous"></script>
+
+    <script src="js/app.js"></script>
 </body>
 
 </html>
