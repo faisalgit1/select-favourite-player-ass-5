@@ -13,7 +13,7 @@ function getPlayerNameVlueById(btnId, nameId) {
         const sizeOfLength = selectAllPlayer();
         if (sizeOfLength >= 5) {
             alert('You are select maximum five Players');
-            document.getElementById(btnId).style.backgroundColor = 'red';
+            document.getElementById(btnId).style.backgroundColor = 'blue';
             return;
         }
         setPlayerName.appendChild(li)
