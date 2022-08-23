@@ -37,6 +37,9 @@ getPlayerNameVlueById('btn-di-maria', 'di-maria');
 getPlayerNameVlueById('btn-jake', 'jake');
 getPlayerNameVlueById('btn-zidane-iqbal', 'zidane-iqbal');
 getPlayerNameVlueById('btn-renato-sanches', 'renato-sanches');
+getPlayerNameVlueById('btn-kylian-mbappe', 'kylian-mbappe');
+getPlayerNameVlueById('btn-ronaldo', 'ronaldo');
+getPlayerNameVlueById('btn-sergio-ramos', 'sergio-ramos');
 
 
 
@@ -64,9 +67,9 @@ function setTextElementValueById(elementId, newValue) {
 
 document.getElementById('btn-calculate').addEventListener('click', function () {
     const playerInputAmount = getInputValueById('player-field');
-    const size = selectAllPlayer();
+    const all = selectAllPlayer();
 
-    const setTotalAmount = size * playerInputAmount;
+    const setTotalAmount = all * playerInputAmount;
     document.getElementById('total-expenses-player').innerText = setTotalAmount
 
 })
@@ -80,7 +83,6 @@ document.getElementById('btn-calculate-total').addEventListener('click', functio
     const previousTotalAmount = getSetElementValueById('balance-total')
     const expensesPlayerAmount = getSetElementValueById('total-expenses-player')
 
-    const totalAmount = previousTotalAmount + totalManagerAndCoachCost + expensesPlayerAmount;
+    const totalAmount = totalManagerAndCoachCost + expensesPlayerAmount;
     setTextElementValueById('balance-total', totalAmount);
-
 })
